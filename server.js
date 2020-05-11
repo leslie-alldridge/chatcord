@@ -30,7 +30,7 @@ io.on('connection', (socket) => {
 
   // Listen for chat messages
   socket.on('chatMessage', (msg) => {
-    io.emit('message', msg);
+    io.emit('message', formatMessage('USER', msg));
   });
 });
 
