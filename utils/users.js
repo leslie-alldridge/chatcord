@@ -31,9 +31,19 @@ function getRoomUsers(room) {
   return users.filter((user) => user.room === room);
 }
 
+// Check unique user
+
+function uniqueUser(username) {
+  users.map((user) => console.log(user));
+  console.log(users.some((user) => user.username === username));
+
+  return users.some((user) => user.username === username);
+}
+
 module.exports = {
   userJoin,
   getCurrentUser,
   userLeave,
   getRoomUsers,
+  uniqueUser,
 };
