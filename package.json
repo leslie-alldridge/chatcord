@@ -19,7 +19,7 @@
   "homepage": "https://github.com/leslie-alldridge/chatcord#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "moment": "^2.25.3",
+    "moment": "^2.29.4",
     "socket.io": "^2.4.0"
   },
   "devDependencies": {
